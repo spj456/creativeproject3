@@ -1,5 +1,5 @@
 body {
-    background-color: green;
+    background-color: rgba(4, 19, 121, 0.55);
 }
 
 @font-face {
@@ -9,6 +9,9 @@ body {
 
 .stopwatch {
     text-align: center;
+    width: 605px;
+    border-radius: 25px;
+    margin: auto;
 }
 
 .display {
