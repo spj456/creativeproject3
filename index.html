@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- include our dependency on angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
-    <script src="avatar.js"></script>
-    <link rel="stylesheet" type="text/css" href="avatar.css">
+    <script src="stopwatch.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <meta charset="utf-8">
-    <title>User Avatar Template</title>
+    <title>Cooleo Stopwatch</title>
 </head>
 <body>
     <div ng-app='app' ng-controller='mainCtrl'>
-        <h1>Create new user</h1>
+        <h1>Stopwatch</h1>
 
-        <form name='userForm' ng-submit='addNew(userForm)'>
-            <input placeholder='Name' ng-model='userForm.name' />
-            <input placeholder='Image Url' ng-model='userForm.url' />
-            <input placeholder='Email' ng-model='userForm.email' />
-            <button type='submit'>Add New</button>
-        </form>
+        <input placeholder='Name' ng-model='userForm.name' />
+        <input placeholder='Image Url' ng-model='userForm.url' />
+        <input placeholder='Email' ng-model='userForm.email' />
+        <button type='submit'>Add New</button>
 
         <ul class='User-list'>
             <li ng-repeat='user in users'>
