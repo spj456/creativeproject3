@@ -8,19 +8,10 @@
     <title>Cooleo StopWatch</title>
 </head>
 <body>
-    <div ng-app='app' ng-controller='mainCtrl'>
-        <h1>Stopwatch</h1>
-        <stopwatch title="stopwatch"
-        <input placeholder='Name' ng-model='userForm.name' />
-        <input placeholder='Image Url' ng-model='userForm.url' />
-        <input placeholder='Email' ng-model='userForm.email' />
-        <button type='submit'>Add New</button>
-
-        <ul class='User-list'>
-            <li ng-repeat='user in users'>
-                <avatar user='user' />
-            </li>
-        </ul>
+    <div ng-app="myApp" ng-controller="myController">
+        <label>Timer with timeout: {{timerWithTimeout | hhmmssmm}}</label>
+        <button ng-click="startTimerWithTimeout()">Start Timer</button>
+        <button ng-click="resetTimerWithTimeout()">reset Timer</button>
     </div>
 </body>
 </html>
