@@ -12,6 +12,11 @@ body {
     font-size: 115px;
     color: green;
     background-color: black;
+    padding: 37px;
+    border-radius: 25px;
+    display: block;
+    width: 500px;
+    text-align: center;
 }
 
 h1 {
