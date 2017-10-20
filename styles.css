@@ -2,6 +2,18 @@ body {
     background-color: green;
 }
 
+@font-face{
+    font-family: 'Digital';
+    src: url('digital-7.ttf');
+}
+
+.stopwatch {
+    font-family: 'Digital';
+    font-size: 115px;
+    color: green;
+    background-color: black;
+}
+
 h1 {
     color: red;
     text-align: center;
