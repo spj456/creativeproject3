@@ -12,6 +12,7 @@ body {
     width: 605px;
     border-radius: 25px;
     margin: auto;
+    margin-top: 90px;
 }
 
 .display {
@@ -31,6 +32,7 @@ button {
     padding: 25px;
     margin: 25px;
     font-size: xx-large;
+    font-family: monospace;
 }
 
 #start {
@@ -48,10 +50,12 @@ h1 {
 }
 
 h2 {
-    color: orangered;
+    color: #ff4500;
+    width: 140px;
     text-align: center;
-    background-color: black;
-    size: 60 px;
+    margin: auto;
+    font-family: monospace;
+    padding-top: 15px;
     align-content: center;
 }
 
