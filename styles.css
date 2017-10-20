@@ -18,8 +18,24 @@ body {
     background-color: black;
     padding: 37px;
     border-radius: 25px;
-    display: block;
+    display: inline-block;
     width: 500px;
+}
+
+button {
+    border-radius: 50%;
+    border: none;
+    padding: 25px;
+    margin: 25px;
+    font-size: xx-large;
+}
+
+#start {
+    background: green;
+}
+
+#reset {
+    background: red;
 }
 
 h1 {
