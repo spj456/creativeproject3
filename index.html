@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
     <script src="stopwatch.js"></script>
@@ -7,11 +8,12 @@
     <meta charset="utf-8">
     <title>Cooleo StopWatch</title>
 </head>
+
 <body>
     <h2>StopWatch</h2>
-    <div ng-app="myApp" ng-controller="myController">
+    <div class="stopwatch" ng-app="myApp" ng-controller="myController">
         <br />
-        <label class="stopwatch">{{timer | hhmmssmm}}</label>
+        <label class="display">{{timer | hhmmssmm}}</label>
         <br />
         <button ng-click="startTimer()">Start Timer</button>
         <button ng-click="resetTimer()">reset Timer</button>
@@ -19,4 +21,5 @@
         <br />
     </div>
 </body>
+
 </html>
