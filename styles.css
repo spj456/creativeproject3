@@ -9,6 +9,9 @@ body {
 
 .stopwatch {
     font-family: 'Digital';
+    font-size: 115px;
+    color: green;
+    background-color: black;
 }
 
 h1 {
