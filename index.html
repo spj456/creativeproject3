@@ -8,10 +8,14 @@
     <title>Cooleo StopWatch</title>
 </head>
 <body>
+    <h2>StopWatch</h2>
     <div ng-app="myApp" ng-controller="myController">
-        <label>Timer with timeout: {{timerWithTimeout | hhmmssmm}}</label>
+        <br />
+        <label class="stopwatch">{{timerWithTimeout | hhmmssmm}}</label>
         <button ng-click="startTimerWithTimeout()">Start Timer</button>
         <button ng-click="resetTimerWithTimeout()">reset Timer</button>
+        <br />
+        <br />
     </div>
 </body>
 </html>

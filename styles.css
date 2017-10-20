@@ -10,9 +10,11 @@ h2 {
     color:orangered;
     text-align: center;
     background-color: black;
+    size: 60 px;
+    align-content:center;
 }
 p {
-size: 14 px;
+size: 60 px;
 color: yellow;
 text-align: center;
 background-color: darkgreen;
@@ -20,19 +22,6 @@ background-color: darkgreen;
 a {
     color: palegreen;
 }
-li {
-    color: yellow;
-    list-style-position:inside;
-    text-align:center;
-    background-color: darkgreen;
-}
-ul {
-    padding: 0;
-    list-style:circle;
-}
-ol {
-    padding: 0;
-}
 div {
-   background-color: blue;
+   background-color: lightgray;
 }
