@@ -1,21 +1,21 @@
 var app = angular.module("myApp", []);
 app.controller("myController", function ($scope, $timeout, $interval) {
 
-    $scope.timerWithTimeout = 0;
-    $scope.startTimerWithTimeout = function () {
-        $scope.timerWithTimeout = 0;
+    $scope.timer = 0;
+    $scope.startTimer = function () {
+        $scope.timer = 0;
         if ($scope.myTimeout) {
             $timeout.cancel($scope.myTimeout);
         }
         $scope.onTimeout = function () {
-            $scope.timerWithTimeout++;
+            $scope.timer++;
             $scope.myTimeout = $timeout($scope.onTimeout, 1000);
         }
         $scope.myTimeout = $timeout($scope.onTimeout, 1000);
     };
 
-    $scope.resetTimerWithTimeout = function () {
-        $scope.timerWithTimeout = 0;
+    $scope.resetTimer = function () {
+        $scope.timer = 0;
         $timeout.cancel($scope.myTimeout);
     }
 })
@@ -25,7 +25,7 @@ app.filter('hhmmssmm', function () {
         var hours = Math.floor(sec_num / 3600);
         var minutes = Math.floor((sec_num - (hours * 3600)) / 60);
         var seconds = sec_num - (hours * 3600) - (minutes * 60);
-        var milliseconds = sec_num - (hours * 3600) - (minutes * 60) - (seconds * 60);
+        var milliseconds = sec_num;
 
         if (hours < 10) { hours = "0" + hours; }
         if (minutes < 10) { minutes = "0" + minutes; }
